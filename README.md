@@ -23,7 +23,7 @@ Project created while learning and practising for my Master's thesis project.
 (To do page)
 - A user can add a new task
 - A user can mark the task as `important` 
-- A user can mark the task as finished
+- A user can mark the task as completed
 - A user can hide or show the `add task` portion of the page
 
 (Budget page)
@@ -42,7 +42,26 @@ Project created while learning and practising for my Master's thesis project.
 
 
 ## Features
+
+- A new user gets registered provided a unique email address has been inserted
+- Whenever a password and a password confirmation are required, it gets checked if they match
+- If a user is logged in, he/she cannot return to the Login page before logging out
+- The password reset token which is sent to the user's email address expires after 60 minutes
+
+- An unlimited number of tasks can be added
+- Tasks get stored in a MongoDB database, along with information like whether the task is important/completed
+- Tasks that are important and are checked as completed, get marked as not important
+
+- If a category for an item is not chosen, the default category is "miscellaneous"
+- An item amount can be 0, but an item cannot be without text
+
+- A pin with it's location, title and description gets sent to the backend
+- Only one pin details box can be open at one time
  
+- A photo gets stored in the 'uploads' folder and added to a database list (MongoDB database)
+- The selected file cannot be uploaded if it's not a .jpeg or .png file
+- If a photo is deleted, it gets removed from the database
+
 
 ## Dependencies
 
@@ -62,3 +81,12 @@ Project created while learning and practising for my Master's thesis project.
 - nodemailer
 - nodemon
 - react-map-gl
+
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/register.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/forgotpass.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/login.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/resetpass.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/todo.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/Budget.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/map.jpg)
+![alt text](https://github.com/2021GK/app-master-2021/blob/master/gallery.jpg)
